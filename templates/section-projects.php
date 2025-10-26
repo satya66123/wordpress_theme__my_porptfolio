@@ -1,0 +1,100 @@
+<?php
+// partials/projects-section.php
+// Usage: get_template_part('partials/projects-section');
+
+$projects = array(
+  "CRUD Applications" => array(
+    array("name"=>"PHP CRUD", "tech"=>"PHP, MySQL, HTML, CSS, JavaScript"),
+    array("name"=>"CodeIgniter CRUD", "tech"=>"PHP, CodeIgniter, MySQL, HTML, CSS"),
+    array("name"=>"Laravel CRUD", "tech"=>"PHP, Laravel, MySQL, Blade, Tailwind CSS"),
+    array("name"=>"CakePHP CRUD", "tech"=>"PHP, CakePHP, MySQL, Bootstrap"),
+    array("name"=>"Struts2 CRUD", "tech"=>"Java, Struts2, MySQL, JSP"),
+    array("name"=>"Spring Boot CRUD (MySQL)", "tech"=>"Java, Spring Boot, Hibernate, MySQL"),
+    array("name"=>"Spring Boot CRUD (MongoDB)", "tech"=>"Java, Spring Boot, MongoDB, REST API"),
+    array("name"=>"MERN CRUD (MySQL)", "tech"=>"MongoDB, Express.js, React.js, Node.js, MySQL"),
+    array("name"=>"MERN CRUD (MongoDB)", "tech"=>"MongoDB, Express.js, React.js, Node.js"),
+    array("name"=>"MEAN CRUD (MySQL)", "tech"=>"MongoDB, Express.js, Angular, Node.js, MySQL"),
+    array("name"=>"MEAN CRUD (MongoDB)", "tech"=>"MongoDB, Express.js, Angular, Node.js"),
+    array("name"=>"MEVN CRUD (MySQL)", "tech"=>"MongoDB, Express.js, Vue.js, Node.js, MySQL"),
+    array("name"=>"MEVN CRUD (MongoDB)", "tech"=>"MongoDB, Express.js, Vue.js, Node.js")
+  ),
+  "Offline AI Applications" => array(
+    array("name"=>"Offline Summarizer App", "tech"=>"Python, Streamlit, NLP, PyPDF2"),
+    array("name"=>"Offline Multilingual Summarizer App", "tech"=>"Python, Streamlit, NLP, PyTorch"),
+    array("name"=>"Offline Document Generator", "tech"=>"Python, Streamlit, python-docx"),
+    array("name"=>"Offline Image Generator", "tech"=>"Python, Streamlit, PIL, OpenCV"),
+    array("name"=>"Offline Semantic Analyzer", "tech"=>"Python, Streamlit, NLP, scikit-learn"),
+    array("name"=>"Offline Video Captions Generator", "tech"=>"Python, Streamlit, MoviePy"),
+    array("name"=>"Offline PDF Chatbot", "tech"=>"Python, Streamlit, PyPDF2"),
+    array("name"=>"Offline AI Assistant", "tech"=>"Python, Streamlit, NLP")
+  ),
+  "OpenAI Integrated AI Applications" => array(
+    array("name"=>"OpenAI Integrated Summarizer App", "tech"=>"Python, Streamlit, OpenAI API"),
+    array("name"=>"OpenAI Integrated Chunked Summarizer App", "tech"=>"Python, Streamlit, OpenAI API, PyPDF2"),
+    array("name"=>"OpenAI Integrated Multilingual Summarizer App", "tech"=>"Python, Streamlit, OpenAI API"),
+    array("name"=>"OpenAI Integrated Semantic Analyzer", "tech"=>"Python, Streamlit, OpenAI API, scikit-learn"),
+    array("name"=>"OpenAI Integrated File Generator App", "tech"=>"Python, Streamlit, OpenAI API, python-docx"),
+    array("name"=>"OpenAI Integrated Chat App", "tech"=>"Python, Streamlit, OpenAI API"),
+    array("name"=>"OpenAI Integrated PDF Chatbot", "tech"=>"Python, Streamlit, OpenAI API, PyPDF2")
+  ),
+  "Live Websites / Projects" => array(
+    array("name"=>"Ifuturglobistic.com", "tech"=>"PHP, MySQL, HTML, CSS, Bootstrap"),
+    array("name"=>"Rucaa.in", "tech"=>"PHP, MySQL, HTML, CSS, Tailwind CSS"),
+    array("name"=>"Chaliciuos.in", "tech"=>"PHP, MySQL, HTML, CSS"),
+    array("name"=>"Navastri.in", "tech"=>"PHP, MySQL, HTML, CSS"),
+    array("name"=>"FMCG.in", "tech"=>"PHP, MySQL, HTML, CSS"),
+    array("name"=>"Innopathtech.com", "tech"=>"HTML5, Bootstrap, CSS, Map Integration"),
+    array("name"=>"Trackia.com", "tech"=>"CodeIgniter, PHP, MySQL"),
+    array("name"=>"Aarnavizag.com", "tech"=>"CodeIgniter, PHP, MySQL"),
+    array("name"=>"Aalaaponline.com", "tech"=>"CodeIgniter, PHP, MySQL"),
+    array("name"=>"Lotterycorner.com", "tech"=>"Struts2, Java, MySQL, JSP"),
+    array("name"=>"Lotteryleaf.com", "tech"=>"Struts2, Java, MySQL, JSP"),
+    array("name"=>"Master.innopathtech.com", "tech"=>"Struts2, Java, MySQL, JSP")
+  )
+);
+?>
+
+<section class="py-5 projects-section" aria-labelledby="projects-heading">
+  <div class="container">
+    <h2 id="projects-heading" class="display-6 text-center text-primary fw-bold mb-4">Projects</h2>
+
+    <div class="row g-4">
+      <?php foreach ( $projects as $category => $items ) : ?>
+        <div class="col-md-6">
+          <div class="card h-100 text-white overflow-hidden" style="background: rgba(255,255,255,0.04); backdrop-filter: blur(6px);">
+            <div class="card-body">
+              <h3 class="h5 text-info mb-3"><?php echo esc_html( $category ); ?></h3>
+              <ul class="mb-0">
+                <?php foreach ( $items as $project ) : ?>
+                  <li class="mb-3">
+                    <strong><?php echo esc_html( $project['name'] ); ?></strong>
+                    <span class="d-block text-muted small"><?php echo esc_html( $project['tech'] ); ?></span>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="text-center mt-4">
+      <a class="btn btn-primary btn-lg" href="https://github.com/satya66123" target="_blank" rel="noopener noreferrer">
+        See More Projects on GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* Move these rules to your theme stylesheet if preferred */
+.projects-section {
+  background: linear-gradient(90deg,#0b5cff 0%, #0ea5a8 60%);
+  color: #ffffff;
+}
+.projects-section .card {
+  background: rgba(255,255,255,0.05) !important;
+  border: none;
+}
+.projects-section .text-info { color: #7dd3fc !important; } /* adjust to match your palette */
+</style>

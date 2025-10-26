@@ -1,0 +1,39 @@
+<?php
+// partials/contact-section.php
+// Usage: get_template_part('partials/contact-section');
+?>
+<section id="contact" class="bg-light py-5" aria-labelledby="contact-heading">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 text-center">
+        <h2 id="contact-heading" class="display-5 fw-bold mb-3 text-dark">Contact Me</h2>
+        <p class="text-muted mb-4">
+          I’m open to opportunities and collaborations. You can reach me via email, phone, or WhatsApp.
+        </p>
+
+        <div class="list-group list-group-flush fs-5 fw-semibold">
+          <div class="list-group-item bg-transparent border-0 px-0">
+            <strong>Email:</strong>
+            <a href="mailto:satyasrinath653512@gmail.com" class="ms-2 text-decoration-underline">
+              satyasrinath653512@gmail.com
+            </a>
+          </div>
+
+          <div class="list-group-item bg-transparent border-0 px-0">
+            <strong>Phone:</strong>
+            <a href="tel:+917396531602" class="ms-2 text-decoration-underline">
+              +91 739-653-1602
+            </a>
+          </div>
+
+          <div class="list-group-item bg-transparent border-0 px-0">
+            <strong>WhatsApp:</strong>
+            <a href="https://wa.me/7893994174" target="_blank" rel="noopener noreferrer" class="ms-2 text-decoration-underline">
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

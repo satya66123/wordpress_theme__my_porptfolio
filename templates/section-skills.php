@@ -1,0 +1,136 @@
+<?php
+// partials/skills-section.php
+// Usage: get_template_part('partials/skills-section');
+
+$fullStackSkills = array(
+  "React.js", "Next.js", "Angular 18+", "Vite.js", "Tailwind CSS",
+  "HTML5", "CSS3", "JavaScript", "PHP (CodeIgniter, Laravel, CakePHP, PHP 5/7/8)",
+  "Java (Struts2, Spring Boot)", "JSP", "Servlets", "Hibernate", "Entity", "XML", "JSON",
+  "REST APIs", "CRUD Systems", "JDBC"
+);
+
+$aiGenAiSkills = array(
+  "Python 3.10/3.11", "NLP", "PyTorch", "MoviePy", "NumPy", "Streamlit",
+  "scikit-learn", "FFMPEG", "PyPDF2", "python-docx"
+);
+
+$cloudDevOpsSkills = array(
+  "AWS", "Docker", "Kubernetes", "SDLC in Cloud", "CI/CD", "Cloud Deployment",
+  "Scalability", "Apache Tomcat", "Visual Studio", "CMD", "PyCharm",
+  "Eclipse IDE", "IntelliJ IDEA"
+);
+
+$databasesSkills = array(
+  "MySQL", "MongoDB", "PostgreSQL", "Oracle", "MS SQL Server"
+);
+
+$analyticsMarketingSkills = array(
+  "Excel", "Power BI", "AI-powered Power BI Dashboards",
+  "SQL using AI", "SEO Optimization", "Keyword Research",
+  "AI-powered Marketing", "Project Management", "Team Collaboration", "Communication", "Adaptability"
+);
+
+$softwareToolKit = array(
+  "Eclipse (2019/2022/2025)", "IntelliJ IDEA", "Visual Studio", "XAMPP", "WAMPP", "LAMPP",
+  "Notepad", "Notepad++", "Sublime text", "Word","Excel","PowerPoint","Power BI",
+  "Pycharm", "MongoDB Client"
+);
+
+$aiTools = array(
+  "ChatGpt", "Gemini", "Proplexity", "Claude AI", "Microsoft Copilot", "Gemini.ai",
+  "Sumo.ai", "fireflies.ai", "photo.ai", "Wisprflow.ai","Emily.ai","SuperGrow","Happentance",
+  "Numerous.ai", "flick.ai"
+);
+?>
+
+<section id="skills" class="py-5 skills-section" aria-labelledby="skills-heading">
+  <div class="container">
+    <h2 id="skills-heading" class="display-6 text-center text-primary fw-bold mb-4">Skills</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <h3 class="h5 mb-3">Full Stack Development</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <?php foreach ( $fullStackSkills as $s ) : ?>
+              <span class="badge rounded-pill py-2 px-3 bg-dark text-white"><?php echo esc_html( $s ); ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <h3 class="h5 mb-3">AI / Gen AI</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <?php foreach ( $aiGenAiSkills as $s ) : ?>
+              <span class="badge rounded-pill py-2 px-3 bg-dark text-white"><?php echo esc_html( $s ); ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <h3 class="h5 mb-3">Cloud & DevOps</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <?php foreach ( $cloudDevOpsSkills as $s ) : ?>
+              <span class="badge rounded-pill py-2 px-3 bg-dark text-white"><?php echo esc_html( $s ); ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <h3 class="h5 mb-3">Databases</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <?php foreach ( $databasesSkills as $s ) : ?>
+              <span class="badge rounded-pill py-2 px-3 bg-dark text-white"><?php echo esc_html( $s ); ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <h3 class="h5 mb-3">Analytics & Marketing</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <?php foreach ( $analyticsMarketingSkills as $s ) : ?>
+              <span class="badge rounded-pill py-2 px-3 bg-dark text-white"><?php echo esc_html( $s ); ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100 border-0 shadow-sm p-3">
+          <h3 class="h5 mb-3">Software Tools Used</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <?php foreach ( $softwareToolKit as $s ) : ?>
+              <span class="badge rounded-pill py-2 px-3 bg-dark text-white"><?php echo esc_html( $s ); ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <div class="card border-0 shadow-sm p-3">
+          <h3 class="h5 mb-3">AI Tools Used</h3>
+          <div class="d-flex flex-wrap gap-2">
+            <?php foreach ( $aiTools as $s ) : ?>
+              <span class="badge rounded-pill py-2 px-3 bg-dark text-white"><?php echo esc_html( $s ); ?></span>
+            <?php endforeach; ?>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+/* move to theme stylesheet if preferred */
+.skills-section { background: linear-gradient(180deg,#0f172a 0%, #0b1220 100%); color: #eef2ff; }
+.skills-section .card { background: rgba(255,255,255,0.02); }
+.skills-section .badge { font-size: 0.9rem; }
+</style>

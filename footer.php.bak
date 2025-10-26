@@ -1,0 +1,6 @@
+<footer class="bg-dark text-white text-center py-4 mt-5">
+<p class="mb-0">© <?php echo date('Y'); ?> Satya Srinath. All Rights Reserved.</p>
+</footer>
+<?php wp_footer(); ?>
+</body>
+</html>

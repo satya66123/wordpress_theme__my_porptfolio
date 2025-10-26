@@ -1,0 +1,93 @@
+<?php
+// partials/certifications-section.php
+// Usage: get_template_part('partials/certifications-section');
+$certifications = array(
+  "Software Development & Programming" => array(
+    "Data Structures in C++ – Scaler",
+    "DSA Problem Solving using Java – Scaler",
+    "String Patterns (KMP Algorithm) – Scaler",
+    "Java DSA – Scaler",
+    "Mastering Java Concurrency & Multithreading – Scaler",
+    "Dynamic Problem Solving – Scaler",
+    "React Bootcamp – Scaler",
+    "JavaScript Basic & Advanced – UpGrad",
+    "Basic Python Programming – UpGrad",
+    "Mastering Python – Scaler",
+    "Python & SQL for Data Science – Scaler",
+    "Python for Beginners(Mastering Python) - Scaler",
+    "Node.js for Beginners - UpGrad"
+  ),
+  "AI / Gen AI / Data Science" => array(
+    "GenAI – How AI is Changing the Role of Data Scientist – Scaler",
+    "SOLID Principles for Developers – Scaler",
+    "Instagram System Design – Scaler",
+    "Freedom with AI Masterclass – Freedom With AI",
+    "Introduction to Deep Learning & Neural Networks – UpGrad",
+    "Introduction to Generative AI - Upgrad",
+    "Generative AI Foundation Program - Upgrad & Microsoft",
+    "Generative AI Mastermind - Outskill",
+    "AI Tools Workshop - Be10X",
+    "Understanding the Architecture Behind the LLAMA Model - Scaler"
+  ),
+  "Cloud / DevOps / Architecture" => array(
+    "AWS – Scaler",
+    "Docker & Kubernetes – Scaler",
+    "Low-Level Design of Payment Apps – Scaler"
+  ),
+  "Business / Management / Marketing" => array(
+    "Introduction to Fintech – UpGrad",
+    "Artificial Intelligence in Real World - Upgrad",
+    "Introduction to HR & Strategy – UpGrad",
+    "ChatGPT for Developers – UpGrad",
+    "ChatGPT for Digital Marketing – UpGrad",
+    "Advanced Prompt Engineering for ChatGPT – UpGrad",
+    "SEO Essentials – SEMRush",
+    "Keyword Research Essentials – SEMRush",
+    "Become an AI Powered Marketer – SEMRush",
+    "Excel & Power BI – Office Masters",
+    "Power BI Using AI – Skill Nations",
+    "SQL Using AI – AI for Techies",
+    "Stock Market Using AI – Springpad"
+  )
+);
+?>
+
+<section id="certifications" class="py-5" aria-labelledby="certifications-heading">
+  <div class="container">
+    <h2 id="certifications-heading" class="display-6 text-center text-primary fw-bold mb-4">Certifications</h2>
+
+    <div class="row g-4">
+      <?php foreach ( $certifications as $category => $items ) : ?>
+        <div class="col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body">
+              <h3 class="h5 text-teal fw-semibold mb-3"><?php echo esc_html( $category ); ?></h3>
+              <ul class="mb-0">
+                <?php foreach ( $items as $cert ) : ?>
+                  <li class="text-muted"><?php echo esc_html( $cert ); ?></li>
+                <?php endforeach; ?>
+              </ul>
+            </div>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+
+    <div class="text-center mt-4">
+      <a class="btn btn-teal btn-lg text-white" href="https://www.linkedin.com/in/satya-srinath-nekkanti-08b012a3" target="_blank" rel="noopener noreferrer">
+        See More Certifications on LinkedIn
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+/* tiny color helper — add to theme stylesheet instead if preferred */
+.btn-teal {
+  background-color: #0d9488;
+  border-color: #0d9488;
+}
+.text-teal {
+  color: #0f766e !important;
+}
+</style>

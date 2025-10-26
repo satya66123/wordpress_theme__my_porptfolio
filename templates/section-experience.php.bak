@@ -1,0 +1,29 @@
+<?php
+// partials/experience-section.php
+// Usage: get_template_part('partials/experience-section');
+?>
+<section class="bg-white text-dark py-5" aria-labelledby="experience-heading">
+  <div class="container">
+    <h2 id="experience-heading" class="display-6 fw-bold text-center text-warning mb-4" style="color:#ea580c;">
+      Experience
+    </h2>
+
+    <div class="mx-auto" style="max-width: 820px;">
+      <div class="mb-4">
+        <h3 class="h4 fw-semibold mb-1">Innopath Technologies Pvt. Ltd</h3>
+        <p class="text-muted small mb-2">Web Developer | 2018 – 2025</p>
+        <p class="mb-0">
+          <?php echo esc_html( 'Developed full-stack and AI-integrated web apps using Java, PHP, MERN, and Spring Boot.' ); ?>
+        </p>
+      </div>
+
+      <div>
+        <h3 class="h4 fw-semibold mb-1">AutoCx Technologies Pvt. Ltd</h3>
+        <p class="text-muted small mb-2">Junior Developer | 2017 – 2018</p>
+        <p class="mb-0">
+          <?php echo esc_html( 'Built PHP-based web applications and assisted backend/frontend teams.' ); ?>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
