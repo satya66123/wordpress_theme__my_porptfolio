@@ -30,7 +30,7 @@ You can view the live demo of this portfolio [here](#) *(replace with live URL i
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/satya66123/wordpress_portfolio.git
+   git clone https://github.com/satya66123/wordpress_theme_my_porptfolio.git
 ````
 
 2. Copy the theme folder to your WordPress installation directory under:
