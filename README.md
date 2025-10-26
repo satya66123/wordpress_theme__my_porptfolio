@@ -1,7 +1,7 @@
 
-# WordPress Portfolio Website
+# WordPress Portfolio Theme
 
-A custom WordPress portfolio website showcasing my projects, skills, and achievements. Built using WordPress, PHP, and Bootstrap, this theme is designed to be fully responsive, SEO-friendly, and easily customizable.
+A custom WordPress portfolio theme showcasing my projects, skills, and achievements. Built using WordPress, PHP, and Bootstrap, this theme is designed to be fully responsive, SEO-friendly, and easily customizable.
 
 ## Demo
 
